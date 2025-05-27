@@ -1,23 +1,18 @@
-# 🤖 Multi-Agent RAG Workflow
+# Multi-Agent RAG Workflow
 
 A sophisticated **Retrieval-Augmented Generation (RAG)** system that combines multiple AI agents to provide intelligent, research-backed responses to user queries. This project demonstrates advanced AI orchestration using LangGraph, vector databases, and multiple language models.
 
-![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![LangChain](https://img.shields.io/badge/LangChain-🦜-yellow.svg)
-![AI](https://img.shields.io/badge/AI-Multi--Agent-red.svg)
+## Features
 
-## 🌟 Features
+- **Intelligent Document Retrieval**: Semantic search using HuggingFace embeddings and Chroma vector database
+- **Multi-Agent Architecture**: Specialized AI agents for research analysis and synthesis
+- **Adaptive Workflow**: Dynamic decision-making with conditional research loops
+- **Comprehensive Analytics**: Detailed metadata tracking and performance monitoring
+- **Async Processing**: High-performance asynchronous execution
+- **🛡Robust Error Handling**: Graceful degradation and detailed logging
+- *Configurable**: Easy customization through environment variables
 
-- **🔍 Intelligent Document Retrieval**: Semantic search using HuggingFace embeddings and Chroma vector database
-- **🧠 Multi-Agent Architecture**: Specialized AI agents for research analysis and synthesis
-- **🔄 Adaptive Workflow**: Dynamic decision-making with conditional research loops
-- **📊 Comprehensive Analytics**: Detailed metadata tracking and performance monitoring
-- **⚡ Async Processing**: High-performance asynchronous execution
-- **🛡️ Robust Error Handling**: Graceful degradation and detailed logging
-- **🔧 Configurable**: Easy customization through environment variables
-
-## 🏗️ Architecture
+## Architecture
 
 ```mermaid
 graph TD
@@ -40,7 +35,7 @@ graph TD
 | **Research Agent** | Llama 3.3 70B | Document analysis & insights | Deep analytical thinking, structured analysis |
 | **Synthesis Agent** | Gemini 1.5 Pro | Response generation | Clear communication, user-friendly responses |
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -151,7 +146,7 @@ config = WorkflowConfig(
 | `llama_model` | `llama-3.3-70b-instruct:free` | Llama model via OpenRouter |
 | `vector_store_path` | `./chroma_db` | Path for persistent vector storage |
 
-## 📊 Example Output
+## Example Output
 
 ```json
 {
@@ -168,7 +163,7 @@ config = WorkflowConfig(
 }
 ```
 
-## 🧪 Testing
+## Testing
 
 Run the included demo to test the system:
 
@@ -177,20 +172,20 @@ python main.py
 ```
 
 The demo will:
-- ✅ Validate API keys
-- 📚 Load sample documents about AI
-- 🔍 Process three test queries
-- 📊 Display results and performance metrics
+- Validate API keys
+- Load sample documents about AI
+- Process three test queries
+- Display results and performance metrics
 
-## 🏢 Use Cases
+## Use Cases
 
-- **📚 Research Assistance**: Academic and professional research
-- **🏢 Knowledge Management**: Corporate document analysis
-- **💬 Intelligent Q&A**: Advanced FAQ systems
-- **📈 Business Intelligence**: Multi-document insights
-- **🎓 Educational Tools**: Learning and analysis platforms
+- **Research Assistance**: Academic and professional research
+- **Knowledge Management**: Corporate document analysis
+- **Intelligent Q&A**: Advanced FAQ systems
+- **Business Intelligence**: Multi-document insights
+- **Educational Tools**: Learning and analysis platforms
 
-## 🔍 How It Works
+## How It Works
 
 ### 1. Document Processing
 - Documents are split into overlapping chunks
@@ -248,7 +243,7 @@ def load_documents_from_web(urls):
 workflow.add_documents(load_documents_from_web(urls))
 ```
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -256,14 +251,14 @@ workflow.add_documents(load_documents_from_web(urls))
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📈 Performance Metrics
+## Performance Metrics
 
 - **Response Time**: ~10-30 seconds per query
 - **Document Retrieval**: Sub-second semantic search
 - **Accuracy**: High relevance through multi-agent validation
 - **Scalability**: Async architecture supports concurrent queries
 
-## 🚨 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -279,24 +274,6 @@ workflow.add_documents(load_documents_from_web(urls))
 - Reduce `chunk_size` and `max_retrieved_docs`
 - Use lighter embedding models for resource-constrained environments
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [LangChain](https://langchain.com/) for the foundational framework
-- [OpenRouter](https://openrouter.ai/) for Llama model access
-- [Google](https://ai.google.dev/) for Gemini API
-- [Chroma](https://www.trychroma.com/) for vector database
-- [HuggingFace](https://huggingface.co/) for embedding models
-
-## 📞 Contact
-
-Your Name - [your.email@example.com](mailto:your.email@example.com)
-
-Project Link: [https://github.com/yourusername/multi-agent-rag-workflow](https://github.com/yourusername/multi-agent-rag-workflow)
-
----
-
-⭐ **Star this repository if you find it useful!**
