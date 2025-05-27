@@ -9,8 +9,8 @@ A sophisticated **Retrieval-Augmented Generation (RAG)** system that combines mu
 - **Adaptive Workflow**: Dynamic decision-making with conditional research loops
 - **Comprehensive Analytics**: Detailed metadata tracking and performance monitoring
 - **Async Processing**: High-performance asynchronous execution
-- **🛡Robust Error Handling**: Graceful degradation and detailed logging
-- *Configurable**: Easy customization through environment variables
+- **Robust Error Handling**: Graceful degradation and detailed logging
+- **Configurable**: Easy customization through environment variables
 
 ## Architecture
 
